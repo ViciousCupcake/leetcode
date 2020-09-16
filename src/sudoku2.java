@@ -14,10 +14,10 @@ public class sudoku2 {
  {'.','.','.','.','1','.','.','.','.'}, 
  {'.','.','.','.','.','.','2','.','.'}, 
  {'.','.','.','8','.','.','.','.','.'}};
-        System.out.println(sudoku2(grid));
+        System.out.println(sudoku(grid));
     }
 
-    static boolean sudoku2(char[][] grid) {
+    static boolean sudoku(char[][] grid) {
         boolean numbers[] = new boolean[grid.length + 1];
         for (int a = 0; a < grid.length; a++) {
             Arrays.fill(numbers, false);

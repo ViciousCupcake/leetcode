@@ -17,7 +17,6 @@ public class prob7 {
             }
             return x;
         } catch (Exception e) {
-            // TODO: handle exception
         }
         return 0;
 
