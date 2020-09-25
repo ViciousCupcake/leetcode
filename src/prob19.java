@@ -15,18 +15,13 @@ public class prob19 {
             list.add(curr);
             curr = curr.next;
         }
-        /*
-         * if(list.size()-n-1 == 0){ if(list.size()>0){ return list.get(1); } else
-         * return null; }
-         */
+
         if (list.size() - n - 1 == -1) {
             if (list.size() < 2)
                 return null;
             return list.get(1);
         }
-        /*
-         * if(list.size() - n - 1 ==0){ return list.get(1); }
-         */
+
         list.get(list.size() - n - 1).next = list.get(list.size() - n).next;
         return head;
     }
