@@ -1,5 +1,3 @@
-package src;
-
 public class prob273 {
     public static void main(String[] args) {
         System.out.println(numberToWords(50868));
